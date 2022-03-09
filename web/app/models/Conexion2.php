@@ -6,10 +6,10 @@
 		private $basedatos;
 		public $conexion;
 		public function __construct(){
-		    $this->servidor = "localhost";
-			$this->usuario = "root";
-			$this->contrasena = "12345";
-			$this->basedatos = "ezmath";
+		    $this->servidor = "mysql.face.ubiobio.cl";
+			$this->usuario = "Tesisezmath";
+			$this->contrasena = "EzMath20$21";
+			$this->basedatos = "ezmath_bd";
 		}
 		function conectar(){
 			$this->conexion = new mysqli($this->servidor,$this->usuario,$this->contrasena,$this->basedatos);
